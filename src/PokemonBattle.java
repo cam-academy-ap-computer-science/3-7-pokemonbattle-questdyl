@@ -1,5 +1,5 @@
 /*		Pseudo-code:
- * -----------------------------------
+ * ----------------------------------
  * method battlestart():
  * 	  Announce the battle starting
  * 	  Ask for Pokemon name from user
