@@ -21,11 +21,32 @@
  */
 
 
+import java.util.*;
+
 public class PokemonBattle {
 
-	public static void main(String[] args) {
+	public static String battlestart() {
+		Scanner userInput = new Scanner (System.in);
+		System.out.println("A wild Zebstrika appeared!");
+		System.out.println();
 		
-
+		System.out.print("Which Pokemon do you choose?  ");
+		String pokemon = userInput.nextLine();
+		
+		System.out.println("You chose " + pokemon + "!");
+		System.out.println();
+		
+		System.out.println("It's a battle between " + pokemon + " and Zebstrika");
+		return pokemon;
 	}
 
+	public static int damage() {
+		Scanner userInput = new Scanner (System.in);
+		System.out.println("What are your " + pokemon + "'s stats?");
+		
+		
+	}
+	public static void main(String[] args) {
+		battlestart();
+	}
 }
