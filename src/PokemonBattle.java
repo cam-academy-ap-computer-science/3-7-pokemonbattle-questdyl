@@ -30,7 +30,8 @@
  * 	  return HP
  * ----------------------------------
  * method statsTable()
- * 	  
+ * 	  print name
+ *    print hp
  */
 
 
@@ -53,13 +54,41 @@ public class PokemonBattle {
 		return pokemon;
 	}
 
-	public static int damage() {
+	public static double damage() {
 		Scanner userInput = new Scanner (System.in);
-		System.out.println("What are your " + pokemon + "'s stats?");
+		System.out.println("What are your pokeomon's stats?");
+		System.out.print("Level:  ");
+		int lvl = userInput.nextInt();
 		
+		System.out.print("Attack:  ");
+		int atk = userInput.nextInt();
 		
+		System.out.print("Defense:  ");
+		int def = userInput.nextInt();
+		
+		System.out.print("Base:  ");
+		int base = userInput.nextInt();
+		
+		System.out.print("STAB:  ");
+		int stab = userInput.nextInt();
+		
+		System.out.print("HP:  ");
+		int hp = userInput.nextInt();
+		
+		System.out.println();
+		
+		double dam = ((2 * lvl + 10) / (250) + (atk/def) * base + 2) * (0.85 + Math.random() * (0.15) * stab);
+		hp = hp - (int)dam;
+		System.out.println("Your pokeomn took " + (int)dam + " points of damage.");
+		System.out.println("Your HP is now " + hp + ".");
+		return hp;
+	}
+	
+	public static void statsTable(String pokemon, double hp) {
+		System.out.println("Name:   " + pokemon);
+		System.out.println("HP:     " + hp);
 	}
 	public static void main(String[] args) {
-		battlestart();
+		statsTable(battlestart(), damage());
 	}
 }
