@@ -1,9 +1,8 @@
 /****
- * Grading Comments:   11/25
- *  Obviously, you didn't finish by Friday evening's deadline.  I'll look again and regrade Monday 
- *  evening after 7pm.  But for now, I'll have to grade it as-is.
+ * Grading Comments:   11/25   REVISED 11/17/2019 for half-credit.   18/25
+ *  
  *  RUBRIC Unit 3 = 25 pts
- * 10 pts - Correct Output (must compile and run)   5/10
+ * 10 pts - Correct Output (must compile and run)   5/10  
  * 5 pts - Proper Use of Scanner, and decent User Interface  3/5
  * 3 pts - Proper Use of Return       0/2
  * 3 pts - Proper User of Parameter   0/2
